@@ -1,0 +1,5 @@
+<canvas class="canvas-test" canvas-id="firstCanvas"></canvas>
+
+<view class="button">
+    <button bindtap="bindbt">转起来</button>
+</view>

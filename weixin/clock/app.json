@@ -1,0 +1,25 @@
+{
+    "pages": [
+		"pages/clockNormal/canvas",
+        "pages/clockSifi/canvas"
+        
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "canvas",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "list": [
+		{
+            "pagePath": "pages/clockNormal/canvas",
+            "text": "普通时钟"
+        }, {
+            "pagePath": "pages/clockSifi/canvas",
+            "text": "特殊时钟"
+        }],
+        "color": "#000000",
+        "selectedColor": "red"
+    }
+}
