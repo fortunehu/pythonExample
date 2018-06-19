@@ -147,9 +147,9 @@ function drawWheelCanvas(){
     ctx.clearRect(0,0,canvasW,canvasH);
 
     //strokeStyle 绘制颜色
-    ctx.strokeStyle = "#FFBE04"; // 红色
+    ctx.strokeStyle = "#FFFFFF"; // 红色 FFBE04
     //font 画布上文本内容的当前字体属性
-    ctx.font = '16px Microsoft YaHei';
+    ctx.font = '18px Microsoft YaHei';
 
     // 注意，开始画的位置是从0°角的位置开始画的。也就是水平向右的方向。
     // 画具体内容
@@ -180,7 +180,7 @@ function drawWheelCanvas(){
 
         /*----绘制奖品内容----重点----*/
         // 红色字体
-        ctx.fillStyle = "#E5302F";
+        ctx.fillStyle = "#FFFFFF";//E5302F
         var rewardName = turnWheel.rewardNames[index];
         var line_height = 17;
         // translate方法重新映射画布上的 (0,0) 位置
