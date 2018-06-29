@@ -3,6 +3,8 @@ from selenium import webdriver
 # from selenium import WebElement
 import time
 
+tel_num = "********"
+
 #10010 bomb
 driver = webdriver.Chrome()
 driver.get('https://uac.10010.com/cust/userinfo/userInfoInit')
@@ -14,7 +16,7 @@ driver.switch_to_frame("login_iframe")
 time.sleep(3)
 driver.find_element_by_id("randomPwdTips").click()
 time.sleep(1)
-driver.find_element_by_id("userName").send_keys("176*****")
+driver.find_element_by_id("userName").send_keys(tel_num)
 time.sleep(1)
 driver.find_element_by_id("randomCode").click()
 time.sleep(3)
