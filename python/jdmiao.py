@@ -4,21 +4,26 @@ from selenium import webdriver
 import time
 import datetime
 
+tel_num = "17607168027"
+
 #baidu bomb
 driver = webdriver.Chrome()
 
 def login(uname, pwd):
     driver.get("http://www.jd.com")
     driver.find_element_by_link_text("你好，请登录").click()
-    time.sleep(3)
+    time.sleep(1)
     driver.find_element_by_link_text("账户登录").click()
     driver.find_element_by_name("loginname").send_keys(uname)
     driver.find_element_by_name("nloginpwd").send_keys(pwd)
     driver.find_element_by_id("loginsubmit").click()
+    time.sleep(2)
+    driver.get("https://cart.jd.com/cart.action")
     time.sleep(3)
-    #driver.get("https://cart.jd.com/cart.action")
-    #time.sleep(3)
-    #driver.find_element_by_link_text("去结算").click()
+    driver.find_element_by_link_text("去结算").click()
+
+    time.sleep(5)
+    driver.find_element_by_link_text("提交订单").click()
     now = datetime.datetime.now()
     print(now.strftime('%Y-%m-%d %H:%M:%S'))
     print('login success')
@@ -37,6 +42,5 @@ def buy_on_time(buytime):
 
 
 # entrance
-login('username', 'password')
+login('for', '321')
 #buy_on_time('2018-01-01 14:00:00')
-
